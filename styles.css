@@ -1,0 +1,174 @@
+:root {
+    --cinza: #333333;
+    --cinza-claro: #808080;
+    --amarelo: #FFB612;
+    --vermelho: #dc0a17;
+    --verde: #2FC022;
+}
+
+* {
+    font-family: 'Gotham';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./assets/fonts/gotham-light.woff2') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./assets/fonts/gotham-book.woff2') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./assets/fonts/gotham-bold.woff2') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./assets/fonts/gotham-black.woff2') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: black;
+}
+
+.logo {
+    height: 60px;
+    display: flex;
+}
+
+main h1 {
+    display: flex;
+    margin: 60px 60px 20px 60px;
+    color: var(--cinza);
+}
+
+.retangulo {
+    margin: 20px 60px 40px 60px;
+    border: 5px solid var(--cinza);
+    width: 100px;
+}
+
+main p {
+    display: flex;
+    text-align: justify;
+    margin: 20px 60px 20px 60px;
+    color: var(--cinza-claro);
+}
+
+.horario {
+    max-width: 700px;
+    margin: 20px 60px;
+    border-style: solid;
+    border-color: var(--cinza-claro);
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.horario h1 img {
+    position: relative;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.horario h1 {
+    position: relative;
+    right: 50px;
+    bottom: 50px;
+    color: var(--cinza-claro);
+}
+
+.horario h3 {
+    margin: 30px;
+    color: var(--cinza-claro);
+}
+
+.linha {
+    position: relative;
+    bottom: 30px;
+    margin: 20px;
+    width: 600px;
+    border: 2px solid var(--cinza-claro);
+}
+
+.linha-nav {
+    position: relative;
+    right: 40px;
+    bottom: 20px;
+    margin: 20px;
+    width: 600px;
+    border: 2px solid var(--cinza-claro);
+}
+
+.horarios {
+    text-decoration: none;
+    margin: 20px 40px 20px;
+}
+
+.botao{
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+    border: solid 1px var(--cinza);
+    border-radius: 5px;
+    color: var(--cinza);
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.botao:hover{
+    background-color: var(--cinza-claro);
+    color: white;
+    transform: scale(1.2)
+}
+
+.final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.final .b1 h2 {
+    padding: 10px;
+    color: var(--cinza);
+}
+
+.final .b1 {
+    cursor: pointer;
+    background-color: var(--amarelo);
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.final .b1:hover {
+    transform: scale(1.2);
+}
+
+.final .b2 {
+    cursor: pointer;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.final .b2:hover {
+    transform: scale(1.2);
+}
